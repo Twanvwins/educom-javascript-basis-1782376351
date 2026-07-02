@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            const sumEven = (i) => {
+                const modulus = i % 2
+
+                if (modulus === 0) {
+                    return true
+                } else {
+                    return false
+                }
+            }
+
+            let total = 0
+            for (let i = 0; i <= 100; i++) {
+                console.log(`The value of i: ${ i }`)
+                if (sumEven(i)) {
+                    total = total + i
+                }
+            }
+            console.log(total)
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
